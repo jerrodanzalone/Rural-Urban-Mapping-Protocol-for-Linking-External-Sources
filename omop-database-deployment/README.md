@@ -13,7 +13,7 @@ Create a new database with an empty schema using MySQL. This project was deploye
 
 ## Usage
 
-Usage requires including technical information about your database connection requirements in each table load sequence. For ease of use, a slimmed-down version of [OMOP CDM v5.2.2](https://github.com/OHDSI/CommonDataModel/tree/v5.2.2) is used here. All insert statements are taken from a 1k sample derived from the [CMS 2008-2010 Data Entrepreneurs’ Synthetic Public Use File](https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/SynPUFs/DE_Syn_PUF.html). The work to sample this dataset was done by [Lee Evans](http://www.ltscomputingllc.com/downloads/) and reproduced here for ease of deployment. 
+Usage requires including technical information about your database connection requirements in each table load sequence. For ease of use, a slimmed-down version of [OMOP CDM v5.2.2](https://github.com/OHDSI/CommonDataModel/tree/v5.2.2) is used here. All insert statements are taken from a 1k sample derived from the [CMS 2008-2010 Data Entrepreneurs’ Synthetic Public Use File](https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/SynPUFs/DE_Syn_PUF.html). The work to sample this dataset was done by [Lee Evans](http://www.ltscomputingllc.com/downloads/) and reproduced here for ease of deployment. Likewise, only table specifications (i.e. DDL) have been used here and all constraints have been omitted for ease of deployment.
 
 You need to include information about your database when running from the command line for each file: 
 
