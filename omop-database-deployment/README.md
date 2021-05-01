@@ -1,4 +1,4 @@
-# This folder describes the process for deployment a small-scale OMOP database
+# Deploying a Small-Scale OMOP Database Instance Using SynPUF Data
 
 The OMOP Common Data Model allows for the systematic analysis of disparate observational databases. The concept behind this approach is to transform data contained within those databases into a common format (data model) as well as a common representation (terminologies, vocabularies, coding schemes), and then perform systematic analyses using a library of standard analytic routines that have been written based on the common format. 
 
