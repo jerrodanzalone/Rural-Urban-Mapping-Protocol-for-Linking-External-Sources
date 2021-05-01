@@ -25,9 +25,13 @@ mysql DATABASE_NAME < TABLE.sql
 This project includes additional synthetic data filled in at random for missing location information. Since the project described here requires geolocation information in the form of ZIP Code and county, those details have been populated at random where unavailable in the source CMS data. Sources for this folder are as follows: 
 
 [OHDSI Specifications for OMOP v5.2.2](https://github.com/OHDSI/CommonDataModel/tree/v5.2.2)
+
 [CMS SynPUF Public Use Files](https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/SynPUFs/DE_Syn_PUF.html)
+
 [Lee Evans Sample of SynPUF Datasets](http://www.ltscomputingllc.com/downloads/)
+
 [ERS-Maintained RUCC Codes](https://www.ers.usda.gov/data-products/rural-urban-continuum-codes.aspx)
+
 [ERS-Maintained RUCA Codes](https://www.ers.usda.gov/data-products/rural-urban-commuting-area-codes/)
 
 ## License
