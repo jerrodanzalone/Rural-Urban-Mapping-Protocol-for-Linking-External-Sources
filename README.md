@@ -33,8 +33,8 @@ After installing the OMOP database in MySQL, proceed to defining your cohort of 
 
 First download the package contents your local directory:
 
-```python
-wget www.rawasdfksdfljjsdfoisdflsdflk.com 
+```git
+wget https://raw.githubusercontent.com/jerrodanzalone/Rurality-Index-Mapping-Protocol-for-Linking-External-Sources/main/RIMPLES.py
 ```
 From here, update information about your local database connection. This will vary depending on your underlying database settings. The package is flexible and can support multiple database models (i.e., MariaDB, PostgreSQL, SQLite, etc.):
 
