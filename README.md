@@ -1,4 +1,4 @@
-Rurality Index Mapping Protocol for Linking External Sources (RIMPLES)
+Rural-Urban Mapping Protocol for Linking External Sources (RUMPLES)
 ==========
 
 The purpose of this project is to provide a framework for easy mapping to external data sets using demographic measures from EHR systems. This pilot project will look at external data sets for rurality that link to row-level patient data in a hypothetical demographic table to demonstrate a prototype for a software package capable of routinizing this task for clinical research data repositories or for project-specific requirements.
@@ -35,14 +35,14 @@ RIMPLES requires the following to run:
 Usage
 -----------------
 
-The RIMPLES pilot program is built on a slimmed-down version of [OMOP CDM v5.2.2](https://github.com/OHDSI/CommonDataModel/tree/v5.2.2). Please follow the instruction [here](https://github.com/jerrodanzalone/rurality-index-mapping-tool/tree/main/omop-database-deployment) to deploy the database locally. 
+This RUMPLES pilot is built on a slimmed-down version of [OMOP CDM v5.2.2](https://github.com/OHDSI/CommonDataModel/tree/v5.2.2). Please follow the instruction [here](https://github.com/jerrodanzalone/rurality-index-mapping-tool/tree/main/omop-database-deployment) to deploy the database locally. 
 
 After installing the OMOP database in MySQL, proceed to defining your cohort of interest. Alternatively, you can run the program against your entire database. The output creates a new table in your simple OMOP database as well as an output file with the mapped patient information with the included RUCC and RUCA information. 
 
 First download the package contents your local directory:
 
 ```git
-wget https://raw.githubusercontent.com/jerrodanzalone/Rurality-Index-Mapping-Protocol-for-Linking-External-Sources/main/RIMPLES.py
+wget https://raw.githubusercontent.com/jerrodanzalone/Rural-Urban-Mapping-Protocol-for-Linking-External-Sources/main/RUMPLES.py
 ```
 From here, update information about your local database connection. This will vary depending on your underlying database settings. The package is flexible and can support multiple database models (i.e., MariaDB, PostgreSQL, SQLite, etc.):
 
