@@ -48,6 +48,9 @@ if len(sys.argv) > 3:
 input_name = sys.argv[1]
 output_name = sys.argv[2]
 
+# Print message telling user the program is running
+print("Executing program...")
+
 # Load map
 with urlopen('https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json') as response:
     counties = json.load(response)
@@ -67,4 +70,4 @@ fig = px.choropleth_mapbox(df, geojson=counties, locations='fips', color='fips_c
 fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 
 # Write created figure to html from user argument #2
-fig.write_html('/home/aanzalone/aanzalone_project/cohort.html')
+fig.write_html(output_name)
