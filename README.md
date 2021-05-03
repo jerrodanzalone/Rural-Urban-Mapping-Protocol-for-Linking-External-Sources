@@ -102,36 +102,19 @@ This creates an html choropleth map of the full cohort by county. It is an inter
 
 References
 -----------------
-1. Gardner, B. J., Pedersen, J. G., Campbell, M. E., & McClay, J. C. (2019). Incorporating a
-location-based socioeconomic index into a de-identified i2b2 clinical data
-warehouse. Journal of the American Medical Informatics Association: JAMIA, 26(4), 286–
-293. https://doi.org/10.1093/jamia/ocy172
-2. Gagalova, K. K., Elizalde, M. A. L., Portales-Casamar, E., & Görges, M. (2020). What You
-Need to Know Before Implementing a Clinical Research Data Warehouse: Comparative
-Review of Integrated Data Repositories in Health Care Institutions. JMIR formative
-research, 4(8), e17687.
-3. Freij, M., Dullabh, P., Lewis, S., Smith, S. R., Hovey, L., & Dhopeshwarkar, R. (2019).
-Incorporating social determinants of health in electronic health records: qualitative study of
-current practices among top vendors. JMIR medical informatics, 7(2), e13849.
-4. Source dataset: https://www.ers.usda.gov/data-products/rural-urban-continuum-codes.aspx
-5. Source dataset: https://www.ers.usda.gov/data-products/rural-urban-commuting-areacodes.
-aspx
-6. Haendel, M. A., Chute, C. G., Bennett, T. D., Eichmann, D. A., Guinney, J., Kibbe, W. A., ... & N3C Consortium. (2020). The National COVID Cohort Collaborative (N3C): rationale,
-design, infrastructure, and deployment. Journal of the American Medical Informatics
-Association.
-7. Ehrenstein V, Kharrazi H, Lehmann H, et al. Obtaining Data From Electronic Health
-Records. In: Gliklich RE, Leavy MB, Dreyer NA, editors. Tools and Technologies for
-Registry Interoperability, Registries for Evaluating Patient Outcomes: A User’s Guide, 3rd
-Edition, Addendum 2 [Internet]. Rockville (MD): Agency for Healthcare Research and
-Quality (US); 2019 Oct. Chapter 4. Available from:
-https://www.ncbi.nlm.nih.gov/books/NBK551878/
-8. Rangel, J. C., Ranade, S., Sutcliffe, P., Mykhalovskiy, E., Gastaldo, D., & Eakin, J. (2020).
-COVID-19 policy measures-Advocating for the inclusion of the social determinants of health
-in modelling and decision making. Journal of evaluation in clinical practice, 26(4), 1078–
-1080. https://doi.org/10.1111/jep.13436
-9. Onega, T., Weiss, J. E., Alford-Teaster, J., Goodrich, M., Eliassen, M. S., & Kim, S. J.
-(2020). Concordance of rural-urban self-identity and ZIP code-derived rural-urban
-commuting area (RUCA) designation. The Journal of Rural Health, 36(2), 274-280.
+1.	Gardner, B. J., Pedersen, J. G., Campbell, M. E., & McClay, J. C. (2019). Incorporating a location-based socioeconomic index into a de-identified i2b2 clinical data warehouse. Journal of the American Medical Informatics Association: JAMIA, 26(4), 286–293. https://doi.org/10.1093/jamia/ocy172
+2.	Gagalova, K. K., Elizalde, M. A. L., Portales-Casamar, E., & Görges, M. (2020). What You Need to Know Before Implementing a Clinical Research Data Warehouse: Comparative Review of Integrated Data Repositories in Health Care Institutions. JMIR formative research, 4(8), e17687. 
+3.	Freij, M., Dullabh, P., Lewis, S., Smith, S. R., Hovey, L., & Dhopeshwarkar, R. (2019). Incorporating social determinants of health in electronic health records: qualitative study of current practices among top vendors. JMIR medical informatics, 7(2), e13849.
+4.	Source dataset: https://www.ers.usda.gov/data-products/rural-urban-continuum-codes.aspx
+5.	Source dataset: https://www.ers.usda.gov/data-products/rural-urban-commuting-area-codes.aspx
+6.	Haendel, M. A., Chute, C. G., Bennett, T. D., Eichmann, D. A., Guinney, J., Kibbe, W. A., ... & N3C Consortium. (2020). The National COVID Cohort Collaborative (N3C): rationale, design, infrastructure, and deployment. Journal of the American Medical Informatics Association.
+7.	Ehrenstein V, Kharrazi H, Lehmann H, et al. Obtaining Data From Electronic Health Records. In: Gliklich RE, Leavy MB, Dreyer NA, editors. Tools and Technologies for Registry Interoperability, Registries for Evaluating Patient Outcomes: A User’s Guide, 3rd Edition, Addendum 2 [Internet]. Rockville (MD): Agency for Healthcare Research and Quality (US); 2019 Oct. Chapter 4. Available from: https://www.ncbi.nlm.nih.gov/books/NBK551878/
+8.	Rangel, J. C., Ranade, S., Sutcliffe, P., Mykhalovskiy, E., Gastaldo, D., & Eakin, J. (2020). COVID-19 policy measures-Advocating for the inclusion of the social determinants of health in modelling and decision making. Journal of evaluation in clinical practice, 26(4), 1078–1080. https://doi.org/10.1111/jep.13436
+9.	Onega, T., Weiss, J. E., Alford‐Teaster, J., Goodrich, M., Eliassen, M. S., & Kim, S. J. (2020). Concordance of rural‐urban self‐identity and ZIP code‐derived rural‐urban commuting area (RUCA) designation. The Journal of Rural Health, 36(2), 274-280.
+10.	Cho, J., You, S. C., Lee, S., Park, D., Park, B., Hripcsak, G., & Park, R. W. (2020). Application of Epidemiological Geographic Information System: An Open-Source Spatial Analysis Tool Based on the OMOP Common Data Model. International journal of environmental research and public health, 17(21), 7824.
+11.	OHDSI. (2019). The Book of OHDSI.
+12.	Platt, R. W. (2021). Code Review: An Important Step Towards Reproducible Research. American journal of epidemiology.
+
 
 License
 -----------------
