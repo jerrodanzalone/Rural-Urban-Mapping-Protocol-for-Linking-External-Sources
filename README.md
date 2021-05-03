@@ -95,7 +95,9 @@ This input file is then used in the cohortMapping.py  The output file will autom
 ```
 python3 cohortMapping.py mappedCohort.csv /path/to/cohortMapped.html
 ```
-This creates an html choropleth map of the full cohort by county. It is an interactive html map based on the [MapBox add-on built within Plotly Express](https://plotly.com/python/mapbox-county-choropleth/). It includes counts of the defined cohort mapped to county. Please view an example of the map [here](https://github.com/jerrodanzalone/Rural-Urban-Mapping-Protocol-for-Linking-External-Sources/tree/main/sample-files).
+This creates an html choropleth map of the full cohort by county. It is an interactive html map based on the [MapBox add-on built within Plotly Express](https://plotly.com/python/mapbox-county-choropleth/). It includes counts of the defined cohort mapped to county. Please view an example of the map [here](https://github.com/jerrodanzalone/Rural-Urban-Mapping-Protocol-for-Linking-External-Sources/tree/main/sample-files). Here is a sample of what you can expect from this process: 
+
+![alt text](https://github.com/jerrodanzalone/Rural-Urban-Mapping-Protocol-for-Linking-External-Sources/blob/main/sample-files/sampeMap.png?raw=true)
 
 References
 -----------------
