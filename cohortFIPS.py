@@ -55,7 +55,11 @@ cursor.execute('DROP TABLE IF EXISTS cohort;')
 
 # Read data from the CSV files
 cohort = pd.read_csv(input_name)
+
+# Let user know the program is working...
 print("Executing program...")
+
+# Save results to a dataframe
 df = pd.DataFrame(cohort, columns=['person_id'])
 
 # Create Table
@@ -68,24 +72,24 @@ for row in df.iterrows():
 conn.commit()
 
 # Drop table in case script is used multiple times
-cursor.execute('DROP TABLE IF EXISTS cohort_zip;')
+cursor.execute('DROP TABLE IF EXISTS cohort_fips;')
 conn.commit()
 
-# Create table for cohort_zip
-query = "CREATE TABLE cohort_zip" + \
+# Create table for cohort_fip
+query = "CREATE TABLE cohort_fips" + \
          " (person_id int, fips int);"
 cursor.execute(query)
 conn.commit()
 
 # Insert statements for cohort_zip table
-insert_cohort_zip = "INSERT INTO cohort_zip (person_id, fips) " + \
+insert_cohort_fips = "INSERT INTO cohort_fips (person_id, fips) " + \
         "SELECT C.person_id, L.county AS fips " + \
         "FROM cohort C " + \
         "JOIN person P ON P.person_id = C.person_id " + \
         "JOIN location L ON L.location_id = P.location_id;"
 
 # Insert data into cohort_zip table
-cursor.execute(insert_cohort_zip)
+cursor.execute(insert_cohort_fips)
 conn.commit()
 
 # Insert statements for cohort_fips table
