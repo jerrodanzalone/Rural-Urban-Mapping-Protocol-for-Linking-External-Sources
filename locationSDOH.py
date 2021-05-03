@@ -55,7 +55,11 @@ cursor.execute('DROP TABLE IF EXISTS cohort;')
 
 # Read data from the CSV files
 cohort = pd.read_csv(input_name)
+
+# Let the user know the program is executing...
 print("Executing program...")
+
+# Store csv to a dataframe in Pandas
 df = pd.DataFrame(cohort, columns=['person_id'])
 
 # Create cohort table
