@@ -31,6 +31,7 @@ RIMPLES requires the following to run:
   * [MySQLdb](https://pypi.org/project/MySQL-python/)
   * [Python 3.X](https://www.python.org/downloads/)
   * [Pandas](https://pandas.pydata.org/)
+  * [Plotly Express](https://pypi.org/project/plotly-express/)
 
 
 Usage
