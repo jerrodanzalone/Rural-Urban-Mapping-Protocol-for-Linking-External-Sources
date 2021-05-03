@@ -86,7 +86,7 @@ wget https://raw.githubusercontent.com/jerrodanzalone/Rural-Urban-Mapping-Protoc
 wget https://raw.githubusercontent.com/jerrodanzalone/Rural-Urban-Mapping-Protocol-for-Linking-External-Sources/main/cohortMapping.py
 ```
 
-The cohort defined in the previous step is used here as well. The output file will automatically output into the filepath given as the second system argument. An example of an input file named cohort.csv with a desired path to file is provided below. 
+The cohort defined in the previous step is used here as well. The output file will automatically output into the filepath given as the second system argument. The program also creates a table in your database corresponding to cohort_fips, which includes the patient cohort and the fips for the county associated with each person. An example of an input file named cohort.csv with a desired path to file is provided below. 
 
 ```
 python3 cohortFIPS.py cohort.csv /path/to/mappedCohort.csv
