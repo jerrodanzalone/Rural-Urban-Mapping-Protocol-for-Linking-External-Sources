@@ -18,6 +18,7 @@ Table of Contents
 
   * [Requirements](#requirements)
   * [Usage](#usage)
+  * [Optional Mapping](#mapping)
   * [References](#contributing)
   * [License](#license)
 
@@ -39,10 +40,10 @@ This RUMPLES pilot is built on a slimmed-down version of [OMOP CDM v5.2.2](https
 
 After installing the OMOP database in MySQL, proceed to defining your cohort of interest. Alternatively, you can run the program against your entire database. The output creates a new table in your simple OMOP database as well as an output file with the mapped patient information with the included RUCC and RUCA information. 
 
-First download the package contents your local directory:
+First download locationSDOH.py into your local directory:
 
 ```git
-wget https://raw.githubusercontent.com/jerrodanzalone/Rural-Urban-Mapping-Protocol-for-Linking-External-Sources/main/RUMPLES.py
+wget https://raw.githubusercontent.com/jerrodanzalone/Rural-Urban-Mapping-Protocol-for-Linking-External-Sources/main/locationSDOH.py
 ```
 From here, update information about your local database connection. This will vary depending on your underlying database settings. The package is flexible and can support multiple database models (i.e., MariaDB, PostgreSQL, SQLite, etc.):
 
@@ -51,10 +52,10 @@ From here, update information about your local database connection. This will va
 conn = MySQLdb.connect(db="DATABASE INFORMATION")
 cursor = conn.cursor()
 ```
-After defining a cohort of interest, the package runs through system arguments. It takes in two system arguments: one input file and one output file. The input file contains a column defining the person_id of interest, which is used to JOIN to the OMOP test database. The output file will automatically output in the current directory with the name given in the second argument. An example of an input file named cohort.csv with a desired output file of mapped_cohort.csv is provided below. 
+After defining a cohort of interest, the package runs through system arguments. It takes in two system arguments: one input file and one output file. The input file contains a column defining the person_id of interest, which is used to JOIN to the OMOP test database. The output file will automatically output into the filepath given as the second system argument. An example of an input file named cohort.csv with a desired path to file is provided below. 
 
 ```
-python3 RIMPLES.py cohort.csv mapped_cohort.csv
+python3 locationSDOH.py cohort.csv /path/to/locationSDOH.csv
 ```
 A table is also created in the database with the following variables:
 
@@ -72,6 +73,29 @@ To run the package against the entire database, run the following against the OM
 SELECT DISTINCT(person_id)
 FROM person;
 ```
+
+Usage
+-----------------
+To employ an optional mapping component based on the defined cohort, a fun package add-on is provided to create a cohort-mapped csv file with county code and an option to map it using [Plotly Express](https://plotly.com/python/plotly-express/). 
+
+First download cohortFips.py and cohortMapping.py to your local directory:
+
+```git
+wget https://raw.githubusercontent.com/jerrodanzalone/Rural-Urban-Mapping-Protocol-for-Linking-External-Sources/main/cohortFIPS.py
+wget https://raw.githubusercontent.com/jerrodanzalone/Rural-Urban-Mapping-Protocol-for-Linking-External-Sources/main/cohortMapping.py
+```
+
+The cohort defined in the previous step is used here as well. The output file will automatically output into the filepath given as the second system argument. An example of an input file named cohort.csv with a desired path to file is provided below. 
+
+```
+python3 cohortFIPS.py cohort.csv /path/to/mappedCohort.csv
+```
+This input file is then used in the cohortMapping.py  The output file will automatically output into the filepath given as the second system argument. An example of an input file named cohort.csv with a desired path to file is provided below. 
+
+```
+python3 cohortMapping.py cohort.csv /path/to/cohortMapped.html
+```
+This creates an html choropleth map of the full cohort by county. It is an interactive html map based on the [MapBox add-on built within Plotly Express](https://plotly.com/python/mapbox-county-choropleth/). It includes counts of the defined cohort mapped to county. Please view an example of the map [here](example.html).
 
 References
 -----------------
