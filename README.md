@@ -93,9 +93,9 @@ python3 cohortFIPS.py cohort.csv /path/to/mappedCohort.csv
 This input file is then used in the cohortMapping.py  The output file will automatically output into the filepath given as the second system argument. An example of an input file named cohort.csv with a desired path to file is provided below. 
 
 ```
-python3 cohortMapping.py cohort.csv /path/to/cohortMapped.html
+python3 cohortMapping.py mappedCohort.csv /path/to/cohortMapped.html
 ```
-This creates an html choropleth map of the full cohort by county. It is an interactive html map based on the [MapBox add-on built within Plotly Express](https://plotly.com/python/mapbox-county-choropleth/). It includes counts of the defined cohort mapped to county. Please view an example of the map [here](example.html).
+This creates an html choropleth map of the full cohort by county. It is an interactive html map based on the [MapBox add-on built within Plotly Express](https://plotly.com/python/mapbox-county-choropleth/). It includes counts of the defined cohort mapped to county. Please view an example of the map [here](https://github.com/jerrodanzalone/Rural-Urban-Mapping-Protocol-for-Linking-External-Sources/tree/main/sample-files).
 
 References
 -----------------
